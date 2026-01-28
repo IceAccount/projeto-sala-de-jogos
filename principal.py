@@ -1,9 +1,18 @@
-def cadastro_usuário(nome, idade, cpf, telefone):
+def cadastro_usuário(nome, idade, matricula, telefone):
     with open ("pessoas.txt", "a") as arquivo_cadastro:
-        arquivo_cadastro.write("Nome: {} ; \nIdade: {} ; \nCpf: {} ; Telefone: {}. \n\n".format(nome, idade, cpf, telefone))
+        arquivo_cadastro.write("Nome: {} ; \nIdade: {} ; \nMatricula: {} ; Telefone: {}. \n\n".format(nome, idade, matricula, telefone))
 
-def escolher_jogo():
-    print("hello word")
+def atualizar_dado(nome):
+    with open ("pessoas.txt", "a") as arquivo_cadastro:
+        if nome in arquivo_cadastro:
+            return nome, idade, matricula, telefone
+        
+def escolher_jogo(jogo):
+    with open ("relatorios/Jogos.txt", "r") as jogo:
+        opções = jogo.read()
+        escolher = int(input("Digite aqui o numero referente ao jogo na lista acima: "))
+        
+        
 
 
 
@@ -22,12 +31,14 @@ escolha = int(input("Digite aqui sua escolha: "))
 
 
 if escolha == 1:
-    nome = input("Nome: ")
-    idade = int(input("Idade: "))
-    cpf = int(input("Cpf: "))
-    telefone = int(input("Telefone: "))
-    cadastro_usuário(nome, idade, cpf, telefone)
+    nome = input("Digite seu nome: ")
+    idade = int(input("Digite sua idade: "))
+    matricula = int(input("Digite sua matricula: "))
+    telefone = int(input("Digite seu telefone: "))
+    cadastro_usuário(nome, idade, matricula, telefone)
 elif escolha == 2:
-    print("hello word")
+    digitarnome = input("Digite seu nome: ")
+    dados = atualizar_dado(digitarnome)
+    print(dados)
 elif escolha == 3:
     print("hello word")
