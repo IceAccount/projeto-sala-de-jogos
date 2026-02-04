@@ -1,44 +1,52 @@
-def cadastro_usuário(nome, idade, matricula, telefone):
+def cadastro_usuário(nome, matricula):
     with open ("pessoas.txt", "a") as arquivo_cadastro:
-        arquivo_cadastro.write("Nome: {} ; \nIdade: {} ; \nMatricula: {} ; Telefone: {}. \n\n".format(nome, idade, matricula, telefone))
+        arquivo_cadastro.write("\n\nNome: {} ; \nMatricula: {} ; \n\n-----//-----".format(nome, matricula))
 
-def atualizar_dado(nome):
-    with open ("pessoas.txt", "a") as arquivo_cadastro:
-        if nome in arquivo_cadastro:
-            return nome, idade, matricula, telefone
         
-def escolher_jogo(jogo):
-    with open ("relatorios/Jogos.txt", "r") as jogo:
-        opções = jogo.read()
-        escolher = int(input("Digite aqui o numero referente ao jogo na lista acima: "))
-        
-        
+def opçoes_jogo(genero):
+    if genero == 1:
+        with open ("Jogos.txt", "r") as jogo:
+            todos_jogos = jogo.read()
+            print(todos_jogos)
+            print("\n0 - Caso queira voltar para o menu inicial, Digite 0: ")
+            back = int(input(""))
+    elif genero == 2:
+        with open("Jogos-categoria.txt", "r") as jogos:
+            categorias_jogos = jogos.read()
+            print(categorias_jogos)
+            print("\n0 - Caso queira voltar para o menu inicial, Digite 0: ")
+            back = int(input(""))
+    else:
+        print("\n\n\nEsta opçao eh invalida\n")
 
 
 
+while True:
+    print("\n\nSeja bem-vindo(a) à sala de jogos! ")
+    print("Aqui voce pode escolher entre: ")
+    print("1 - Registrar entrada; ")
+    print("2 - Ver opçoes de jogos; ")
+    print("4 - Empréstimo de jogo; ")
+    print("5 - Sobre nos. ")
+
+    escolha = int(input("Digite sua escolha aqui: "))
 
 
 
+    if escolha == 1:
+        nome = input("Digite seu nome: ")
+        matricula = int(input("Digite sua matricula: "))
+        cadastro_usuário(nome, matricula)
 
+        print("\n\n\n\nEntrada realizada com sucesso!")
 
-print("Seja bem-vindo(a) à sala de jogos")
-print("Aqui voce pode escolher:")
-print("1 - Cadastrar novo usuário;")
-print("2 - Atualizar cadastro")
-print("3 - Escolher jogo;")
-print("4 - Empréstimo de jogo.")
-escolha = int(input("Digite aqui sua escolha: "))
+    elif escolha == 2:
+        print("Deseja ver: ")
+        print("1 - Todas as opções de jogos; ")
+        print("2 - Ver jogos por categorias. ")
 
+        escolha = int(input("Digite sua escolha aqui: "))
+        opçoes_jogo(escolha)
 
-if escolha == 1:
-    nome = input("Digite seu nome: ")
-    idade = int(input("Digite sua idade: "))
-    matricula = int(input("Digite sua matricula: "))
-    telefone = int(input("Digite seu telefone: "))
-    cadastro_usuário(nome, idade, matricula, telefone)
-elif escolha == 2:
-    digitarnome = input("Digite seu nome: ")
-    dados = atualizar_dado(digitarnome)
-    print(dados)
-elif escolha == 3:
-    print("hello word")
+    elif escolha == 3:
+        print("hello word")
