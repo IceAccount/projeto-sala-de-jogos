@@ -18,8 +18,7 @@ def cadastrar_entrada(informaçoes):
         info = []
     info.append(informaçoes)
     with open(caminho_entrada, "w") as s:
-        user = json.dump(info, s, indent=4)
-    print(user)
+        json.dump(info, s, indent=4)
 
 
 def opçoes_jogos(categoria):
