@@ -10,8 +10,7 @@ while True:
     print("Aqui voce pode escolher entre: ")
     print("1 - Registrar entrada; ")
     print("2 - Ver opçoes de jogos; ")
-    print("3 - Horarios de funcionamento; ")
-    print("4 - Sobre nos. ")
+    print("3 - Horarios de funcionamento. ")
 
     escolha = int(input("Digite sua escolha aqui: "))
 
@@ -41,10 +40,7 @@ while True:
         es.opçoes_jogos(escolha)
 
     elif escolha == 3:
-        print("falta")
-
-    elif escolha == 4:
-        print("falta")
+        print("\n\nSegunda à Sexta: manha: 8h às 12h ; tarde: 13h às 17h")
     
     else:
         print("Escolha indisponível")

@@ -4,7 +4,7 @@ import os
 
 caminho_entrada = "relatorio_entrada/pessoas.json"
 caminho_jogos = "Jogos/jogos.json"
-caminho_jogoscategoria = "Jogos/jogos-categoria.json"
+caminho_jogoscategoria = "Jogos/jogos_categoria.json"
 
 
 def cadastrar_entrada(informaçoes):
@@ -18,7 +18,8 @@ def cadastrar_entrada(informaçoes):
         info = []
     info.append(informaçoes)
     with open(caminho_entrada, "w") as s:
-        json.dump(info, s, indent=4)
+        user = json.dump(info, s, indent=4)
+    print(user)
 
 
 def opçoes_jogos(categoria):
@@ -31,6 +32,7 @@ def opçoes_jogos(categoria):
         c = open(caminho_jogoscategoria, "r")
         categorias = json.load(c)
         print(categorias)
+
     else:
         print("Escolha indisponível")
         escolha = int(input("Digite uma nova escolha aqui: "))

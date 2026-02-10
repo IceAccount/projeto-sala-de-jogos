@@ -1,17 +1,17 @@
 [
-    { "id": 1, "nome": "Banco Imobiliário", "categoria": "Estratégia econômica" },
+    { "id": 1, "nome": "Banco Imobiliario", "categoria": "Estratégia economica" },
     { "id": 2, "nome": "War", "categoria": "Estratégia territorial" },
-    { "id": 3, "nome": "Detetive", "categoria": "Mistério e dedução" },
-    { "id": 4, "nome": "Jogo da Vida", "categoria": "Simulação" },
-    { "id": 5, "nome": "Damas", "categoria": "Estratégia clássica" },
-    { "id": 6, "nome": "Xadrez", "categoria": "Estratégia clássica" },
+    { "id": 3, "nome": "Detetive", "categoria": "Misterio e deduçao" },
+    { "id": 4, "nome": "Jogo da Vida", "categoria": "Simulaçao" },
+    { "id": 5, "nome": "Damas", "categoria": "Estrategia clássica" },
+    { "id": 6, "nome": "Xadrez", "categoria": "Estrategia classica" },
     { "id": 7, "nome": "Ludo", "categoria": "Probabilidade ou Sorte" },
-    { "id": 8, "nome": "Cara a Cara", "categoria": "Adivinhação" },
+    { "id": 8, "nome": "Cara a Cara", "categoria": "Adivinhaçao" },
     { "id": 9, "nome": "Perfil", "categoria": "Perguntas e pistas" },
-    { "id": 10, "nome": "Imagem & Ação", "categoria": "Desenho e adivinhação" },
-    { "id": 11, "nome": "Catan", "categoria": "Estratégia e construção" },
-    { "id": 12, "nome": "Ticket to Ride", "categoria": "Estratégia ferroviária" },
-    { "id": 13, "nome": "Uno", "categoria": "Estratégia clássica" },
+    { "id": 10, "nome": "Imagem & Açao", "categoria": "Desenho e adivinhaçao" },
+    { "id": 11, "nome": "Catan", "categoria": "Estratégia e construçao" },
+    { "id": 12, "nome": "Ticket to Ride", "categoria": "Estrategia ferroviaria" },
+    { "id": 13, "nome": "Uno", "categoria": "Estrategia classica" },
     { "id": 14, "nome": "Twister", "categoria": "Movimento e festa" },
-    { "id": 15, "nome": "Jenga", "categoria": "Habilidade e equilíbrio" }
+    { "id": 15, "nome": "Jenga", "categoria": "Habilidade e equilibrio" }
 ]
