@@ -31,9 +31,9 @@ while True:
         print("\n\n\n\nEntrada realizada com sucesso!\n")
 
     elif escolha == 2:
-        print("Deseja ver: ")
+        print("\n\n\nDeseja ver: ")
         print("1 - Todas as opções de jogos; ")
-        print("2 - Ver jogos por categorias. ")
+        print("2 - Ver jogos por categorias.")
 
         escolha = int(input("Digite sua escolha aqui: "))
         
